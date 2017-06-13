@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{17C93434-D454-41DF-AE80-E1CE298092E4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>IMSS_StartUp_Manager.My.MyApplication</StartupObject>
+    <RootNamespace>IMSS_StartUp_Manager</RootNamespace>
+    <AssemblyName>IMSS StartUp Manager</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>IMSS StartUp Manager.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>IMSS StartUp Manager.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>IMSS TartUp Manger Icon 120x120.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BetterListViewExpress-net20, Version=3.7.6.0, Culture=neutral, PublicKeyToken=e6c91a3add447be2, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar2, Version=10.4.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsNGSRegistry.vb" />
+    <Compile Include="IMSSStartupCleaner.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IMSSStartupCleaner.Designer.vb">
+      <DependentUpon>IMSSStartupCleaner.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IMSS_Config.vb" />
+    <Compile Include="IMSS_RegeditAdd.Designer.vb">
+      <DependentUpon>IMSS_RegeditAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IMSS_RegeditAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IMSS_Regedit_Edit.Designer.vb">
+      <DependentUpon>IMSS_Regedit_Edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IMSS_Regedit_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IMSS_VaurisTotalScanner.Designer.vb">
+      <DependentUpon>IMSS_VaurisTotalScanner.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IMSS_VaurisTotalScanner.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IMSS_VirusTotal.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="IMSSStartupCleaner.resx">
+      <DependentUpon>IMSSStartupCleaner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IMSS_RegeditAdd.resx">
+      <DependentUpon>IMSS_RegeditAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IMSS_Regedit_Edit.resx">
+      <DependentUpon>IMSS_Regedit_Edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IMSS_VaurisTotalScanner.resx">
+      <DependentUpon>IMSS_VaurisTotalScanner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_alpha_Refresh_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_IMSS_StartUpManager_AddIcon_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_IMSS_StartUpManager_EditIcon_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_IMSS_StartUpManager_ViewIcon_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_IMSS_StartUpManager_RunIcon_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="IMSS TartUp Manger Icon 120x120.ico" />
+    <None Include="Resources\_IMSS_Folder_24x24.png" />
+    <None Include="Resources\_IMSS_RegeditPathNotAvailable_Icon_16x16.png" />
+    <None Include="Resources\ico_alpha_Search_16x16.png" />
+    <None Include="Resources\_IMSS_CurrentUser_Icon_16x16.png" />
+    <None Include="Resources\_IMSS_AllUsers_Icon_16x16.png" />
+    <None Include="Resources\_IMSS_StatusOff_Icon_16x16.png" />
+    <None Include="Resources\_IMSS_StatusOn_Icon_16x16.png" />
+    <None Include="Resources\_IMSS_Optional_Icon_16x16.png" />
+    <None Include="Resources\_IMSS_alpha_Folder_Opened_Icon_16x16.png" />
+    <None Include="Resources\ico_alpha_Info_16x16.png" />
+    <None Include="Resources\_IMSS_Icon.png" />
+    <None Include="Resources\_IMSS_LoadingPictuerBox_StartupManger_Icon.gif" />
+    <None Include="Resources\ico_alpha_InternetCache_16x16.png" />
+    <None Include="Resources\ico_alpha_browser_settings_16x16.png" />
+    <None Include="Resources\Registry_Defrag_16x16.png" />
+    <None Include="Resources\_IMSS_Refresh_Icon_16x16.png" />
+    <None Include="Resources\_IMSS_View_Icon_16x16.png" />
+    <None Include="Resources\_IMSS_Edit_Icon_16x16.png" />
+    <None Include="Resources\_IMSS_RegeditAdd_MainIcon_16x16.png" />
+    <None Include="Resources\_IMSS_Run.png" />
+    <None Include="Resources\_IMSS__alpha_RegistryEditor_Icon_24x24.png" />
+    <None Include="Resources\ico_alpha_Delete_16x16.png" />
+    <None Include="Resources\ico_alpha_CheckMarkGreen_2_16x16.png" />
+    <None Include="Resources\icon_web-search_24.png" />
+    <None Include="Resources\favicon %281%29.ico" />
+    <None Include="Resources\ico_alpha_Search_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="IWshRuntimeLibrary">
+      <Guid>{F935DC20-1CF0-11D0-ADB9-00C04FD58A0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

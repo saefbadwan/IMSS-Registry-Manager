@@ -1,0 +1,11 @@
+C:\Users\iMSS\documents\visual studio 2010\Projects\IMSS Registry Cleaner\IMSS Registry Cleaner\bin\Debug\IMSS Registry Cleaner.exe
+C:\Users\iMSS\documents\visual studio 2010\Projects\IMSS Registry Cleaner\IMSS Registry Cleaner\bin\Debug\IMSS Registry Cleaner.pdb
+C:\Users\iMSS\documents\visual studio 2010\Projects\IMSS Registry Cleaner\IMSS Registry Cleaner\bin\Debug\IMSS Registry Cleaner.xml
+C:\Users\iMSS\documents\visual studio 2010\Projects\IMSS Registry Cleaner\IMSS Registry Cleaner\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\iMSS\documents\visual studio 2010\Projects\IMSS Registry Cleaner\IMSS Registry Cleaner\obj\x86\Debug\IMSS_Registry_Cleaner.IMSSRegistryCleaner.resources
+C:\Users\iMSS\documents\visual studio 2010\Projects\IMSS Registry Cleaner\IMSS Registry Cleaner\obj\x86\Debug\IMSS_Registry_Cleaner.Resources.resources
+C:\Users\iMSS\documents\visual studio 2010\Projects\IMSS Registry Cleaner\IMSS Registry Cleaner\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Users\iMSS\documents\visual studio 2010\Projects\IMSS Registry Cleaner\IMSS Registry Cleaner\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Users\iMSS\documents\visual studio 2010\Projects\IMSS Registry Cleaner\IMSS Registry Cleaner\obj\x86\Debug\IMSS Registry Cleaner.exe
+C:\Users\iMSS\documents\visual studio 2010\Projects\IMSS Registry Cleaner\IMSS Registry Cleaner\obj\x86\Debug\IMSS Registry Cleaner.xml
+C:\Users\iMSS\documents\visual studio 2010\Projects\IMSS Registry Cleaner\IMSS Registry Cleaner\obj\x86\Debug\IMSS Registry Cleaner.pdb
